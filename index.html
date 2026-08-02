@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Frenchophile — French flashcards</title>
+<meta name="description" content="Simple French vocabulary flashcards with spaced repetition and pronunciation.">
+<meta name="theme-color" content="#10141c">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🇫🇷</text></svg>">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="topbar">
+  <h1>Frenchophile</h1>
+  <div class="topbar-actions">
+    <label class="select">
+      <span class="sr-only">Category</span>
+      <select id="category"></select>
+    </label>
+    <button id="settings-toggle" class="icon-btn" aria-expanded="false" aria-controls="settings" title="Settings">⚙</button>
+  </div>
+</header>
+
+<section id="settings" class="settings" hidden>
+  <label class="row">
+    <input type="checkbox" id="opt-autospeak">
+    <span>Pronounce automatically</span>
+  </label>
+  <label class="row">
+    <input type="checkbox" id="opt-reverse">
+    <span>Reverse cards (English → French)</span>
+  </label>
+  <div class="row">
+    <button id="reset-progress" class="danger">Reset progress</button>
+  </div>
+  <p class="hint">Progress is stored in this browser only. Keyboard: <kbd>Space</kbd> flip · <kbd>←</kbd> again · <kbd>→</kbd> got it · <kbd>S</kbd> speak.</p>
+</section>
+
+<main>
+  <div class="stats" id="stats" aria-live="polite"></div>
+
+  <div class="card-area">
+    <button id="card" class="card" aria-live="polite">
+      <span class="card-face" id="card-front"></span>
+      <span class="card-meta" id="card-meta"></span>
+      <span class="card-back" id="card-back" hidden></span>
+      <span class="card-hint" id="card-hint">tap to reveal</span>
+    </button>
+  </div>
+
+  <div class="controls">
+    <button id="btn-again" class="grade again" disabled>Again</button>
+    <button id="btn-speak" class="speak" title="Pronounce">🔊</button>
+    <button id="btn-good" class="grade good" disabled>Got it</button>
+  </div>
+
+  <div id="done" class="done" hidden>
+    <p id="done-msg"></p>
+    <button id="btn-study-ahead">Study ahead anyway</button>
+  </div>
+</main>
+
+<footer>
+  <span id="progress-bar-wrap"><span id="progress-bar"></span></span>
+  <small id="footer-note"></small>
+</footer>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
