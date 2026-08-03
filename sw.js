@@ -1,5 +1,5 @@
 // Offline support. Bump CACHE when any asset changes.
-const CACHE = "frenchophile-v1";
+const CACHE = "frenchophile-v2";
 const ASSETS = [
   "./",
   "index.html",

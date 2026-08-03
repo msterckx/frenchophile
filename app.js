@@ -153,16 +153,16 @@ function render() {
     return;
   }
 
-  const front = state.reverse ? current.en : current.fr;
-  const back = state.reverse ? current.fr : current.en;
+  const front = state.reverse ? current.nl : current.fr;
+  const back = state.reverse ? current.fr : current.nl;
   el.front.textContent = front;
   el.meta.textContent = `${current.pos} · ${current.cat}`;
   el.back.textContent = back;
   el.back.hidden = !revealed;
   el.card.classList.toggle("revealed", revealed);
   el.card.setAttribute("aria-label", revealed ? `${front} — ${back}` : front);
-  el.front.lang = state.reverse ? "en" : "fr";
-  el.back.lang = state.reverse ? "fr" : "en";
+  el.front.lang = state.reverse ? "nl" : "fr";
+  el.back.lang = state.reverse ? "fr" : "nl";
   el.note.textContent = studyingAhead ? "studying ahead — schedule still updates" : "";
 }
 
