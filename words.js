@@ -27,6 +27,15 @@ export const WORDS = [
   { fr: "se murer dans le silence", nl: "zich in stilzwijgen hullen", pos: "expr", cat: "Expressions" },
   { fr: "rentrer bredouille", nl: "met lege handen terugkeren", pos: "expr", cat: "Expressions" },
   { fr: "ça ne se trouve pas sous le sabot d'un cheval", nl: "dat ligt niet voor het oprapen", pos: "expr", cat: "Expressions" },
+  { fr: "à jeun", nl: "nuchter", pos: "expr", cat: "Expressions" },
+  { fr: "battre son plein", nl: "in volle gang zijn", pos: "expr", cat: "Expressions" },
+  { fr: "en terrain conquis", nl: "op vertrouwd terrein", pos: "expr", cat: "Expressions" },
+  { fr: "sans crier gare", nl: "zonder enige waarschuwing", pos: "expr", cat: "Expressions" },
+  { fr: "en trombe", nl: "bliksemsnel, in volle vaart", pos: "expr", cat: "Expressions" },
+  { fr: "noyer le poisson", nl: "om de hete brij heen draaien", pos: "expr", cat: "Expressions" },
+  { fr: "sans ménagement", nl: "zonder pardon, onzacht", pos: "expr", cat: "Expressions" },
+  { fr: "être rompu à", nl: "ergens aan gewend/bedreven zijn", pos: "expr", cat: "Expressions" },
+  { fr: "enfoncer le clou", nl: "een punt nog eens extra benadrukken", pos: "expr", cat: "Expressions" },
 
   // --- Emotions & attitudes ---
   { fr: "agacer", nl: "irriteren, ergeren", pos: "v", cat: "Emotions" },
@@ -40,6 +49,12 @@ export const WORDS = [
   { fr: "pavoiser", nl: "pronken, de vlag uithangen", pos: "v", cat: "Emotions" },
   { fr: "mettre en rogne", nl: "iemand woedend maken", pos: "expr", cat: "Emotions" },
   { fr: "les yeux hagards", nl: "een verwilderde blik", pos: "n.m.pl", cat: "Emotions" },
+  { fr: "l'avidité", nl: "hebzucht", pos: "n.f.", cat: "Emotions" },
+  { fr: "flemmard", nl: "lui, een luiaard", pos: "adj", cat: "Emotions" },
+  { fr: "chiffonner", nl: "dwars zitten, hinderen (ça me chiffonne)", pos: "v", cat: "Emotions" },
+  { fr: "affolé", nl: "overstuur, in paniek", pos: "adj", cat: "Emotions" },
+  { fr: "figé", nl: "verstijfd", pos: "adj", cat: "Emotions" },
+  { fr: "démuni", nl: "machteloos, berooid", pos: "adj", cat: "Emotions" },
 
   // --- Actions & verbs ---
   { fr: "épingler", nl: "vastspelden; betrappen", pos: "v", cat: "Actions" },
@@ -59,6 +74,17 @@ export const WORDS = [
   { fr: "faillir", nl: "bijna doen (il a failli tomber)", pos: "v", cat: "Actions" },
   { fr: "subsister", nl: "blijven bestaan, overleven", pos: "v", cat: "Actions" },
   { fr: "furtif", nl: "stiekem, heimelijk", pos: "adj", cat: "Actions" },
+  { fr: "morceler", nl: "opdelen, versnipperen", pos: "v", cat: "Actions" },
+  { fr: "fredonner", nl: "neuriën", pos: "v", cat: "Actions" },
+  { fr: "mater", nl: "kijken; in toom houden", pos: "v", cat: "Actions" },
+  { fr: "puiser", nl: "putten, ontlenen", pos: "v", cat: "Actions" },
+  { fr: "peaufiner", nl: "verfijnen, polijsten", pos: "v", cat: "Actions" },
+  { fr: "vriller", nl: "ronddraaien, tollen", pos: "v", cat: "Actions" },
+  { fr: "s'empresser", nl: "zich haasten", pos: "v", cat: "Actions" },
+  { fr: "charbonner", nl: "hard werken, ploeteren", pos: "v", cat: "Actions" },
+  { fr: "balayer", nl: "wegvegen", pos: "v", cat: "Actions" },
+  { fr: "ébaucher", nl: "schetsen, ontwerpen", pos: "v", cat: "Actions" },
+  { fr: "accroupi", nl: "gehurkt", pos: "adj", cat: "Actions" },
 
   // --- Crime ---
   { fr: "le vol à l'étalage", nl: "winkeldiefstal", pos: "n.m.", cat: "Crime" },
@@ -91,6 +117,9 @@ export const WORDS = [
   { fr: "les pieds nickelés", nl: "prutsers, klungelaars", pos: "n.m.pl", cat: "Crime" },
   { fr: "l'étau se resserre", nl: "de bankschroef wordt aangedraaid", pos: "expr", cat: "Crime" },
   { fr: "dans le collimateur", nl: "in het vizier", pos: "expr", cat: "Crime" },
+  { fr: "les méfaits", nl: "misdaden, wandaden", pos: "n.m.pl", cat: "Crime" },
+  { fr: "en cavale", nl: "op de vlucht", pos: "expr", cat: "Crime" },
+  { fr: "en faction", nl: "op wacht, in dienst", pos: "expr", cat: "Crime" },
 
   // --- Justice ---
   { fr: "la comparution", nl: "verschijning voor de rechter", pos: "n.f.", cat: "Justice" },
@@ -116,6 +145,7 @@ export const WORDS = [
   { fr: "les imprécations", nl: "verwensingen", pos: "n.f.pl", cat: "Violence" },
   { fr: "indemne", nl: "ongedeerd", pos: "adj", cat: "Violence" },
   { fr: "le vacarme", nl: "kabaal, herrie", pos: "n.m.", cat: "Violence" },
+  { fr: "le collimateur", nl: "vizier (optisch richtmiddel)", pos: "n.m.", cat: "Violence" },
 
   // --- People ---
   { fr: "l'interlocutrice", nl: "gesprekspartner (vrouw)", pos: "n.f.", cat: "People" },
@@ -125,6 +155,8 @@ export const WORDS = [
   { fr: "chevronné", nl: "doorgewinterd, ervaren", pos: "adj", cat: "People" },
   { fr: "un baroudeur", nl: "globetrotter, avonturier", pos: "n.m.", cat: "People" },
   { fr: "la calvitie", nl: "kaalheid", pos: "n.f.", cat: "People" },
+  { fr: "espiègle", nl: "ondeugend, schalks", pos: "adj", cat: "People" },
+  { fr: "désœuvré", nl: "werkloos, ledig, niets omhanden", pos: "adj", cat: "People" },
 
   // --- Society & news ---
   { fr: "une communauté bienveillante", nl: "een welwillende, respectvolle gemeenschap", pos: "n.f.", cat: "Society" },
@@ -134,6 +166,8 @@ export const WORDS = [
   { fr: "répandu", nl: "wijdverbreid", pos: "adj", cat: "Society" },
   { fr: "encombrant", nl: "omvangrijk, hinderlijk", pos: "adj", cat: "Society" },
   { fr: "mouvementé", nl: "hectisch, bewogen", pos: "adj", cat: "Society" },
+  { fr: "une asbl", nl: "vzw (association sans but lucratif)", pos: "n.f.", cat: "Society" },
+  { fr: "fastidieux", nl: "vervelend, saai", pos: "adj", cat: "Society" },
 
   // --- Faith & death ---
   { fr: "le péché", nl: "de zonde", pos: "n.m.", cat: "Faith" },
@@ -149,6 +183,9 @@ export const WORDS = [
   { fr: "le manutentionnaire", nl: "magazijnier", pos: "n.m.", cat: "Work" },
   { fr: "le domaine de prédilection", nl: "voorkeursgebied, specialiteit", pos: "n.m.", cat: "Work" },
   { fr: "le concessionnaire", nl: "dealer, officiële handelaar", pos: "n.m.", cat: "Work" },
+  { fr: "foncier", nl: "grond-, vastgoed- (bv. taxe foncière)", pos: "adj", cat: "Work" },
+  { fr: "le cordonnier", nl: "de schoenmaker", pos: "n.m.", cat: "Work" },
+  { fr: "le gagne-pain", nl: "kostwinning, broodwinning", pos: "n.m.", cat: "Work" },
 
   // --- Language & reading ---
   { fr: "la maxime", nl: "spreuk, zinspreuk", pos: "n.f.", cat: "Language" },
@@ -178,9 +215,25 @@ export const WORDS = [
   { fr: "l'argile", nl: "klei", pos: "n.f.", cat: "Home" },
   { fr: "une borne", nl: "zuil, terminal, paal", pos: "n.f.", cat: "Home" },
   { fr: "fripé", nl: "verkreukeld", pos: "adj", cat: "Home" },
+  { fr: "le gabarit", nl: "formaat, afmeting", pos: "n.m.", cat: "Home" },
+  { fr: "épais", nl: "dik", pos: "adj", cat: "Home" },
+  { fr: "indélébile", nl: "onuitwisbaar", pos: "adj", cat: "Home" },
+  { fr: "une rame", nl: "roeiriem, roeispaan", pos: "n.f.", cat: "Home" },
+  { fr: "une bécane", nl: "brommer, motorfiets", pos: "n.f.", cat: "Home" },
 
   // --- Nature & science ---
   { fr: "le poulailler", nl: "kippenhok", pos: "n.m.", cat: "Nature" },
   { fr: "se désagréger", nl: "uiteenvallen, afbrokkelen", pos: "v", cat: "Nature" },
   { fr: "l'énergie éolienne", nl: "windenergie", pos: "n.f.", cat: "Nature" },
+  { fr: "nocif", nl: "schadelijk", pos: "adj", cat: "Nature" },
+  { fr: "la pétole", nl: "windstilte, geen zuchtje wind", pos: "n.f.", cat: "Nature" },
+  { fr: "le panache", nl: "pluim (bv. rookpluim)", pos: "n.m.", cat: "Nature" },
+  { fr: "l'écume blanche", nl: "wit schuim", pos: "n.f.", cat: "Nature" },
+  { fr: "la houle", nl: "deining", pos: "n.f.", cat: "Nature" },
+  { fr: "la paroi", nl: "wand (bv. rotswand)", pos: "n.f.", cat: "Nature" },
+  { fr: "déferler", nl: "breken, neerslaan (golven)", pos: "v", cat: "Nature" },
+  { fr: "le récif", nl: "het rif", pos: "n.m.", cat: "Nature" },
+  { fr: "l'affaissement", nl: "verzakking", pos: "n.m.", cat: "Nature" },
+  { fr: "un relevé", nl: "meting, opname", pos: "n.m.", cat: "Nature" },
+  { fr: "la lisière", nl: "rand, zoom (bv. bosrand)", pos: "n.f.", cat: "Nature" },
 ];
