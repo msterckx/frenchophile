@@ -42,6 +42,14 @@ export const WORDS = [
   { fr: "avoir le cran", nl: "het lef hebben", pos: "expr", cat: "Expressions" },
   { fr: "monter au créneau", nl: "in de bres springen", pos: "expr", cat: "Expressions" },
   { fr: "se gourer", nl: "zich vergissen", pos: "v", cat: "Expressions" },
+  { fr: "gai comme un pinson", nl: "vrolijk als een vink", pos: "expr", cat: "Expressions" },
+  { fr: "courir sur le haricot", nl: "op de zenuwen werken", pos: "expr", cat: "Expressions" },
+  { fr: "jurer comme un charretier", nl: "vloeken als een ketter", pos: "expr", cat: "Expressions" },
+  { fr: "appeler à la rescousse", nl: "om versterking vragen", pos: "expr", cat: "Expressions" },
+  { fr: "je m'incline", nl: "ik geef me gewonnen", pos: "expr", cat: "Expressions" },
+  { fr: "quel gâchis", nl: "wat een verspilling", pos: "expr", cat: "Expressions" },
+  { fr: "c'est aléatoire", nl: "overgeleverd aan het toeval", pos: "expr", cat: "Expressions" },
+  { fr: "elle se volatilise", nl: "ze gaat in rook op", pos: "expr", cat: "Expressions" },
 
   // --- Emotions & attitudes ---
   { fr: "agacer", nl: "irriteren, ergeren", pos: "v", cat: "Emotions" },
@@ -65,6 +73,7 @@ export const WORDS = [
   { fr: "accablant", nl: "verpletterend, overweldigend", pos: "adj", cat: "Emotions" },
   { fr: "se dégonfler", nl: "terugkrabbelen", pos: "v", cat: "Emotions" },
   { fr: "le désarroi", nl: "verslagenheid, radeloosheid", pos: "n.m.", cat: "Emotions" },
+  { fr: "affoler", nl: "panikeren, in paniek brengen", pos: "v", cat: "Emotions" },
 
   // --- Actions & verbs ---
   { fr: "épingler", nl: "vastspelden; betrappen", pos: "v", cat: "Actions" },
@@ -98,6 +107,8 @@ export const WORDS = [
   { fr: "affûter", nl: "scherpen, slijpen", pos: "v", cat: "Actions" },
   { fr: "ébranler", nl: "doen wankelen", pos: "v", cat: "Actions" },
   { fr: "en titubant", nl: "wankelend", pos: "expr", cat: "Actions" },
+  { fr: "lésiner", nl: "beknibbelen", pos: "v", cat: "Actions" },
+  { fr: "s'avérer", nl: "blijken (te zijn)", pos: "v", cat: "Actions" },
 
   // --- Crime ---
   { fr: "le vol à l'étalage", nl: "winkeldiefstal", pos: "n.m.", cat: "Crime" },
@@ -149,6 +160,7 @@ export const WORDS = [
   { fr: "la résidence surveillée", nl: "huisarrest", pos: "n.f.", cat: "Justice" },
   { fr: "l'opprobre", nl: "smaad, schande", pos: "n.m.", cat: "Justice" },
   { fr: "l'apologie", nl: "verheerlijking", pos: "n.f.", cat: "Justice" },
+  { fr: "l'attentat à la pudeur", nl: "aanranding van de eerbaarheid", pos: "n.m.", cat: "Justice" },
 
   // --- Violence & weapons ---
   { fr: "un coup de semonce", nl: "waarschuwingsschot", pos: "n.m.", cat: "Violence" },
@@ -185,6 +197,10 @@ export const WORDS = [
   { fr: "austère", nl: "streng, sober", pos: "adj", cat: "People" },
   { fr: "la clavicule", nl: "sleutelbeen", pos: "n.f.", cat: "People" },
   { fr: "le discernement", nl: "inzicht", pos: "n.m.", cat: "People" },
+  { fr: "le frangin", nl: "broertje, broer (spreektaal)", pos: "n.m.", cat: "People" },
+  { fr: "une péronnelle", nl: "leeghoofdig, kwebbelend vrouwmens", pos: "n.f.", cat: "People" },
+  { fr: "mesquin", nl: "kleinzielig", pos: "adj", cat: "People" },
+  { fr: "de cet acabit", nl: "van dat allooi, dat soort (mens)", pos: "expr", cat: "People" },
 
   // --- Society & news ---
   { fr: "une communauté bienveillante", nl: "een welwillende, respectvolle gemeenschap", pos: "n.f.", cat: "Society" },
@@ -197,6 +213,7 @@ export const WORDS = [
   { fr: "une asbl", nl: "vzw (association sans but lucratif)", pos: "n.f.", cat: "Society" },
   { fr: "fastidieux", nl: "vervelend, saai", pos: "adj", cat: "Society" },
   { fr: "la gabegie", nl: "wanbeheer", pos: "n.f.", cat: "Society" },
+  { fr: "la cohue", nl: "gedrang, gewoel", pos: "n.f.", cat: "Society" },
 
   // --- Faith & death ---
   { fr: "le péché", nl: "de zonde", pos: "n.m.", cat: "Faith" },
@@ -216,6 +233,8 @@ export const WORDS = [
   { fr: "le cordonnier", nl: "de schoenmaker", pos: "n.m.", cat: "Work" },
   { fr: "le gagne-pain", nl: "kostwinning, broodwinning", pos: "n.m.", cat: "Work" },
   { fr: "comptabiliser", nl: "registreren, boekhouden", pos: "v", cat: "Work" },
+  { fr: "le contremaître", nl: "ploegbaas", pos: "n.m.", cat: "Work" },
+  { fr: "le grutier", nl: "kraanman", pos: "n.m.", cat: "Work" },
 
   // --- Language & reading ---
   { fr: "la maxime", nl: "spreuk, zinspreuk", pos: "n.f.", cat: "Language" },
@@ -278,4 +297,12 @@ export const WORDS = [
   { fr: "la période de taille", nl: "snoeiperiode", pos: "n.f.", cat: "Nature" },
   { fr: "les ronces", nl: "bramen, doornstruiken", pos: "n.f.pl", cat: "Nature" },
   { fr: "le gravier", nl: "grind", pos: "n.m.", cat: "Nature" },
+  { fr: "la chenille", nl: "rups", pos: "n.f.", cat: "Nature" },
+  { fr: "les griffes", nl: "klauwen", pos: "n.f.pl", cat: "Nature" },
+
+  // --- Love & relationships ---
+  { fr: "avoir qqn dans la peau", nl: "smoorverliefd zijn op iemand", pos: "expr", cat: "Love" },
+  { fr: "bécoter", nl: "zoenen", pos: "v", cat: "Love" },
+  { fr: "elle m'envoûte", nl: "ze brengt mijn hoofd op hol", pos: "expr", cat: "Love" },
+  { fr: "une partouze", nl: "orgie", pos: "n.f.", cat: "Love" },
 ];
