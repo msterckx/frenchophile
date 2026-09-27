@@ -51,6 +51,14 @@ export const WORDS = [
   { fr: "c'est aléatoire", nl: "overgeleverd aan het toeval", pos: "expr", cat: "Expressions" },
   { fr: "elle se volatilise", nl: "ze gaat in rook op", pos: "expr", cat: "Expressions" },
 
+  { fr: "ne pas avoir la côte", nl: "niet populair zijn", pos: "expr", cat: "Expressions" },
+  { fr: "se dépatouiller", nl: "zich redden, zich eruit werken", pos: "v", cat: "Expressions" },
+  { fr: "faire la fine bouche", nl: "kieskeurig zijn, zijn neus optrekken", pos: "expr", cat: "Expressions" },
+  { fr: "éviter de gratter le vernis", nl: "de schijn hooghouden, niet te diep graven", pos: "expr", cat: "Expressions" },
+  { fr: "mettre la puce à l'oreille", nl: "iemand aan het denken zetten, achterdochtig maken", pos: "expr", cat: "Expressions" },
+  { fr: "bon pour l'émulation", nl: "goed voor gezonde rivaliteit", pos: "expr", cat: "Expressions" },
+  { fr: "avoir un flair d'enfer", nl: "er een neus voor hebben", pos: "expr", cat: "Expressions" },
+  { fr: "d'emblée", nl: "meteen, onmiddellijk", pos: "expr", cat: "Expressions" },
   // --- Emotions & attitudes ---
   { fr: "agacer", nl: "irriteren, ergeren", pos: "v", cat: "Emotions" },
   { fr: "être outré", nl: "verontwaardigd zijn", pos: "expr", cat: "Emotions" },
@@ -75,6 +83,10 @@ export const WORDS = [
   { fr: "le désarroi", nl: "verslagenheid, radeloosheid", pos: "n.m.", cat: "Emotions" },
   { fr: "affoler", nl: "panikeren, in paniek brengen", pos: "v", cat: "Emotions" },
 
+  { fr: "abasourdi", nl: "verbijsterd", pos: "adj", cat: "Emotions" },
+  { fr: "la récrimination", nl: "verwijt, beschuldiging", pos: "n.f.", cat: "Emotions" },
+  { fr: "taquiner", nl: "plagen", pos: "v", cat: "Emotions" },
+  { fr: "convoiter", nl: "begeren", pos: "v", cat: "Emotions" },
   // --- Actions & verbs ---
   { fr: "épingler", nl: "vastspelden; betrappen", pos: "v", cat: "Actions" },
   { fr: "éparpiller", nl: "verstrooien, verspreiden", pos: "v", cat: "Actions" },
@@ -110,6 +122,7 @@ export const WORDS = [
   { fr: "lésiner", nl: "beknibbelen", pos: "v", cat: "Actions" },
   { fr: "s'avérer", nl: "blijken (te zijn)", pos: "v", cat: "Actions" },
 
+  { fr: "dévisager", nl: "aanstaren", pos: "v", cat: "Actions" },
   // --- Crime ---
   { fr: "le vol à l'étalage", nl: "winkeldiefstal", pos: "n.m.", cat: "Crime" },
   { fr: "le butin", nl: "de buit", pos: "n.m.", cat: "Crime" },
@@ -152,6 +165,10 @@ export const WORDS = [
   { fr: "le ratissage", nl: "uitkammen (van een gebied)", pos: "n.m.", cat: "Crime" },
   { fr: "bâillonner", nl: "knevelen", pos: "v", cat: "Crime" },
 
+  { fr: "le dépistage", nl: "opsporing", pos: "n.m.", cat: "Crime" },
+  { fr: "le rebondissement", nl: "plot twist, onverwachte wending", pos: "n.m.", cat: "Crime" },
+  { fr: "des liasses de billets", nl: "bundels bankbiljetten", pos: "n.f.pl", cat: "Crime" },
+  { fr: "détrousser", nl: "beroven", pos: "v", cat: "Crime" },
   // --- Justice ---
   { fr: "la comparution", nl: "verschijning voor de rechter", pos: "n.f.", cat: "Justice" },
   { fr: "écoper", nl: "incasseren, oplopen (een straf)", pos: "v", cat: "Justice" },
@@ -162,6 +179,7 @@ export const WORDS = [
   { fr: "l'apologie", nl: "verheerlijking", pos: "n.f.", cat: "Justice" },
   { fr: "l'attentat à la pudeur", nl: "aanranding van de eerbaarheid", pos: "n.m.", cat: "Justice" },
 
+  { fr: "la déchéance", nl: "verval; verbeurdverklaring", pos: "n.f.", cat: "Justice" },
   // --- Violence & weapons ---
   { fr: "un coup de semonce", nl: "waarschuwingsschot", pos: "n.m.", cat: "Violence" },
   { fr: "tirer à bout portant", nl: "van dichtbij neerschieten", pos: "expr", cat: "Violence" },
@@ -183,6 +201,8 @@ export const WORDS = [
   { fr: "assiéger", nl: "belegeren", pos: "v", cat: "Violence" },
   { fr: "se faire laminer", nl: "een pak rammel krijgen", pos: "expr", cat: "Violence" },
 
+  { fr: "l'arme blanche", nl: "steekwapen (niet-vuurwapen)", pos: "n.f.", cat: "Violence" },
+  { fr: "une rixe", nl: "vechtpartij, opstootje", pos: "n.f.", cat: "Violence" },
   // --- People ---
   { fr: "l'interlocutrice", nl: "gesprekspartner (vrouw)", pos: "n.f.", cat: "People" },
   { fr: "le forcené", nl: "dolgedraaide man, razende", pos: "n.m.", cat: "People" },
@@ -202,6 +222,9 @@ export const WORDS = [
   { fr: "mesquin", nl: "kleinzielig", pos: "adj", cat: "People" },
   { fr: "de cet acabit", nl: "van dat allooi, dat soort (mens)", pos: "expr", cat: "People" },
 
+  { fr: "ventripotent", nl: "dikbuikig", pos: "adj", cat: "People" },
+  { fr: "la fraise", nl: "hoofd, smoel (spreektaal)", pos: "n.f.", cat: "People" },
+  { fr: "la convalescence", nl: "herstel(periode)", pos: "n.f.", cat: "People" },
   // --- Society & news ---
   { fr: "une communauté bienveillante", nl: "een welwillende, respectvolle gemeenschap", pos: "n.f.", cat: "Society" },
   { fr: "revendiquer", nl: "opeisen, claimen", pos: "v", cat: "Society" },
@@ -215,6 +238,9 @@ export const WORDS = [
   { fr: "la gabegie", nl: "wanbeheer", pos: "n.f.", cat: "Society" },
   { fr: "la cohue", nl: "gedrang, gewoel", pos: "n.f.", cat: "Society" },
 
+  { fr: "les désagréments", nl: "ongemakken", pos: "n.m.pl", cat: "Society" },
+  { fr: "une embarcation de fortune", nl: "een noodbootje, geïmproviseerd vaartuig", pos: "n.f.", cat: "Society" },
+  { fr: "l'incivilité", nl: "overlast, asociaal gedrag", pos: "n.f.", cat: "Society" },
   // --- Faith & death ---
   { fr: "le péché", nl: "de zonde", pos: "n.m.", cat: "Faith" },
   { fr: "prêcher", nl: "prediken", pos: "v", cat: "Faith" },
@@ -236,6 +262,9 @@ export const WORDS = [
   { fr: "le contremaître", nl: "ploegbaas", pos: "n.m.", cat: "Work" },
   { fr: "le grutier", nl: "kraanman", pos: "n.m.", cat: "Work" },
 
+  { fr: "juteux", nl: "lucratief", pos: "adj", cat: "Work" },
+  { fr: "clore ses affaires", nl: "zijn/hun zaken afsluiten", pos: "expr", cat: "Work" },
+  { fr: "le maraîchage", nl: "groenteteelt", pos: "n.m.", cat: "Work" },
   // --- Language & reading ---
   { fr: "la maxime", nl: "spreuk, zinspreuk", pos: "n.f.", cat: "Language" },
   { fr: "la tournure", nl: "formulering, wending", pos: "n.f.", cat: "Language" },
@@ -246,6 +275,8 @@ export const WORDS = [
   { fr: "le polar", nl: "misdaadroman, thriller", pos: "n.m.", cat: "Language" },
   { fr: "effleurer", nl: "een onderwerp aanstippen", pos: "v", cat: "Language" },
 
+  { fr: "impondérable", nl: "onberekenbaar, onvoorspelbaar", pos: "adj", cat: "Language" },
+  { fr: "limpide", nl: "helder, duidelijk", pos: "adj", cat: "Language" },
   // --- Food & drink ---
   { fr: "le poivron", nl: "paprika", pos: "n.m.", cat: "Food" },
   { fr: "la date de péremption", nl: "houdbaarheidsdatum", pos: "n.f.", cat: "Food" },
