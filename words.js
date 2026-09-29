@@ -59,6 +59,11 @@ export const WORDS = [
   { fr: "bon pour l'émulation", nl: "goed voor gezonde rivaliteit", pos: "expr", cat: "Expressions" },
   { fr: "avoir un flair d'enfer", nl: "er een neus voor hebben", pos: "expr", cat: "Expressions" },
   { fr: "d'emblée", nl: "meteen, onmiddellijk", pos: "expr", cat: "Expressions" },
+  { fr: "sur les chapeaux de roues", nl: "met gierende banden, op volle snelheid", pos: "expr", cat: "Expressions" },
+  { fr: "faire chou blanc", nl: "niets opleveren, bot vangen", pos: "expr", cat: "Expressions" },
+  { fr: "le dernier cri", nl: "de laatste trend", pos: "expr", cat: "Expressions" },
+  { fr: "à 14h pétantes", nl: "klokslag 14 uur", pos: "expr", cat: "Expressions" },
+  { fr: "un échange de bons procédés", nl: "elkaar een wederdienst bewijzen", pos: "expr", cat: "Expressions" },
   // --- Emotions & attitudes ---
   { fr: "agacer", nl: "irriteren, ergeren", pos: "v", cat: "Emotions" },
   { fr: "être outré", nl: "verontwaardigd zijn", pos: "expr", cat: "Emotions" },
@@ -87,6 +92,9 @@ export const WORDS = [
   { fr: "la récrimination", nl: "verwijt, beschuldiging", pos: "n.f.", cat: "Emotions" },
   { fr: "taquiner", nl: "plagen", pos: "v", cat: "Emotions" },
   { fr: "convoiter", nl: "begeren", pos: "v", cat: "Emotions" },
+  { fr: "être échaudé(e)", nl: "het geleerd hebben (door schade en schande)", pos: "expr", cat: "Emotions" },
+  { fr: "virulent", nl: "heftig", pos: "adj", cat: "Emotions" },
+  { fr: "la convoitise", nl: "de begeerte", pos: "n.f.", cat: "Emotions" },
   // --- Actions & verbs ---
   { fr: "épingler", nl: "vastspelden; betrappen", pos: "v", cat: "Actions" },
   { fr: "éparpiller", nl: "verstrooien, verspreiden", pos: "v", cat: "Actions" },
@@ -123,6 +131,8 @@ export const WORDS = [
   { fr: "s'avérer", nl: "blijken (te zijn)", pos: "v", cat: "Actions" },
 
   { fr: "dévisager", nl: "aanstaren", pos: "v", cat: "Actions" },
+  { fr: "glandouiller", nl: "rondhangen, niksen", pos: "v", cat: "Actions" },
+  { fr: "s'envenimer", nl: "verergeren, uit de hand lopen", pos: "v", cat: "Actions" },
   // --- Crime ---
   { fr: "le vol à l'étalage", nl: "winkeldiefstal", pos: "n.m.", cat: "Crime" },
   { fr: "le butin", nl: "de buit", pos: "n.m.", cat: "Crime" },
@@ -169,6 +179,15 @@ export const WORDS = [
   { fr: "le rebondissement", nl: "plot twist, onverwachte wending", pos: "n.m.", cat: "Crime" },
   { fr: "des liasses de billets", nl: "bundels bankbiljetten", pos: "n.f.pl", cat: "Crime" },
   { fr: "détrousser", nl: "beroven", pos: "v", cat: "Crime" },
+  { fr: "dévaliser", nl: "plunderen, leegroven", pos: "v", cat: "Crime" },
+  { fr: "confondre le suspect", nl: "de verdachte ontmaskeren", pos: "expr", cat: "Crime" },
+  { fr: "prendre les paluches", nl: "vingerafdrukken nemen", pos: "expr", cat: "Crime" },
+  { fr: "l'usurpation d'identité", nl: "identiteitsdiefstal", pos: "n.f.", cat: "Crime" },
+  { fr: "mettre hors d'état de nuire", nl: "onschadelijk maken, inrekenen", pos: "expr", cat: "Crime" },
+  { fr: "une opération coup de poing", nl: "bliksemactie", pos: "n.f.", cat: "Crime" },
+  { fr: "le proxénétisme", nl: "seksuele uitbuiting, souteneurschap", pos: "n.m.", cat: "Crime" },
+  { fr: "le racolage", nl: "tippelen", pos: "n.m.", cat: "Crime" },
+  { fr: "le vendeur à la sauvette", nl: "illegale straatverkoper", pos: "n.m.", cat: "Crime" },
   // --- Justice ---
   { fr: "la comparution", nl: "verschijning voor de rechter", pos: "n.f.", cat: "Justice" },
   { fr: "écoper", nl: "incasseren, oplopen (een straf)", pos: "v", cat: "Justice" },
@@ -180,6 +199,8 @@ export const WORDS = [
   { fr: "l'attentat à la pudeur", nl: "aanranding van de eerbaarheid", pos: "n.m.", cat: "Justice" },
 
   { fr: "la déchéance", nl: "verval; verbeurdverklaring", pos: "n.f.", cat: "Justice" },
+  { fr: "un délit passible d'une amende", nl: "een misdrijf waarop een boete staat", pos: "expr", cat: "Justice" },
+  { fr: "le tapage nocturne", nl: "nachtlawaai", pos: "n.m.", cat: "Justice" },
   // --- Violence & weapons ---
   { fr: "un coup de semonce", nl: "waarschuwingsschot", pos: "n.m.", cat: "Violence" },
   { fr: "tirer à bout portant", nl: "van dichtbij neerschieten", pos: "expr", cat: "Violence" },
@@ -203,6 +224,7 @@ export const WORDS = [
 
   { fr: "l'arme blanche", nl: "steekwapen (niet-vuurwapen)", pos: "n.f.", cat: "Violence" },
   { fr: "une rixe", nl: "vechtpartij, opstootje", pos: "n.f.", cat: "Violence" },
+  { fr: "plaqué au sol", nl: "tegen de grond gewerkt", pos: "expr", cat: "Violence" },
   // --- People ---
   { fr: "l'interlocutrice", nl: "gesprekspartner (vrouw)", pos: "n.f.", cat: "People" },
   { fr: "le forcené", nl: "dolgedraaide man, razende", pos: "n.m.", cat: "People" },
@@ -241,6 +263,7 @@ export const WORDS = [
   { fr: "les désagréments", nl: "ongemakken", pos: "n.m.pl", cat: "Society" },
   { fr: "une embarcation de fortune", nl: "een noodbootje, geïmproviseerd vaartuig", pos: "n.f.", cat: "Society" },
   { fr: "l'incivilité", nl: "overlast, asociaal gedrag", pos: "n.f.", cat: "Society" },
+  { fr: "une population aisée", nl: "een welgestelde bevolking", pos: "expr", cat: "Society" },
   // --- Faith & death ---
   { fr: "le péché", nl: "de zonde", pos: "n.m.", cat: "Faith" },
   { fr: "prêcher", nl: "prediken", pos: "v", cat: "Faith" },
@@ -288,6 +311,7 @@ export const WORDS = [
   { fr: "une cafetière à piston", nl: "cafetière, French press", pos: "n.f.", cat: "Food" },
   { fr: "trinquer", nl: "proosten, klinken", pos: "v", cat: "Food" },
 
+  { fr: "de grands millésimes", nl: "topwijnen", pos: "n.m.pl", cat: "Food" },
   // --- Home & objects ---
   { fr: "un coussin moelleux", nl: "een zacht kussen", pos: "n.m.", cat: "Home" },
   { fr: "mou", nl: "slap, zacht", pos: "adj", cat: "Home" },
