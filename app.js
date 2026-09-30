@@ -9,6 +9,7 @@ const LEARNED_BOX = 3;
 const $ = (id) => document.getElementById(id);
 const el = {
   category: $("category"),
+  recency: $("recency"),
   settingsToggle: $("settings-toggle"),
   settings: $("settings"),
   autospeak: $("opt-autospeak"),
@@ -32,7 +33,7 @@ const el = {
 
 // --- persistence -----------------------------------------------------------
 
-const defaults = { progress: {}, category: "All", autospeak: false, reverse: false };
+const defaults = { progress: {}, category: "All", recency: "all", autospeak: false, reverse: false };
 
 function load() {
   try {
@@ -61,8 +62,22 @@ let current = null;
 let revealed = false;
 let studyingAhead = false;
 
+// "added" dates are YYYY-MM-DD, so plain string comparison orders them.
+const newestBatch = WORDS.reduce((max, w) => (w.added > max ? w.added : max), "");
+
+const daysAgo = (n) => new Date(Date.now() - n * DAY).toISOString().slice(0, 10);
+
+const RECENCY = {
+  all: { label: "All words", since: () => "" },
+  latest: { label: "Newest batch", since: () => newestBatch },
+  "2w": { label: "Last 2 weeks", since: () => daysAgo(14) },
+  "1m": { label: "Last month", since: () => daysAgo(30) },
+};
+
+const isRecent = (w) => w.added >= RECENCY[state.recency].since();
+
 const deck = () =>
-  state.category === "All" ? WORDS : WORDS.filter((w) => w.cat === state.category);
+  WORDS.filter((w) => isRecent(w) && (state.category === "All" || w.cat === state.category));
 
 const isDue = (w, now) => cardState(w).due <= now;
 
@@ -147,7 +162,7 @@ function render() {
       .sort((a, b) => a - b)[0];
     el.doneMsg.textContent = nextDue
       ? `Nothing due right now. Next review ${formatWhen(nextDue - now)}.`
-      : "No cards in this category.";
+      : "No cards in this selection.";
     el.studyAhead.hidden = !nextDue;
     el.note.textContent = "";
     return;
@@ -255,6 +270,13 @@ el.category.addEventListener("change", () => {
   next();
 });
 
+el.recency.addEventListener("change", () => {
+  state.recency = el.recency.value;
+  save();
+  buildQueue();
+  next();
+});
+
 el.reset.addEventListener("click", () => {
   if (!confirm("Erase all progress on this device?")) return;
   state.progress = {};
@@ -283,6 +305,11 @@ const categories = ["All", ...new Set(WORDS.map((w) => w.cat))];
 if (!categories.includes(state.category)) state.category = "All";
 for (const cat of categories) {
   el.category.append(new Option(cat, cat, false, cat === state.category));
+}
+if (!(state.recency in RECENCY)) state.recency = "all";
+for (const [key, { label, since }] of Object.entries(RECENCY)) {
+  const count = WORDS.filter((w) => w.added >= since()).length;
+  el.recency.append(new Option(`${label} (${count})`, key, false, key === state.recency));
 }
 el.autospeak.checked = state.autospeak;
 el.reverse.checked = state.reverse;

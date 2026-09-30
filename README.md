@@ -7,11 +7,12 @@ no backend.
 
 ## What it does
 
-- A personal list of 154 words and expressions across 14 categories
+- A personal list of 329 words and expressions across 15 categories
 - Tap a card to reveal the Dutch meaning, then grade yourself **Again** or **Got it**
 - Leitner spaced repetition (1d → 3d → 7d → 16d → 35d), progress saved in the browser
 - Pronunciation via the browser's French text-to-speech voice
 - Reverse mode (Dutch → French), per-category study, works offline once loaded
+- Filter to recently added words: newest batch, last 2 weeks or last month
 - Keyboard: <kbd>Space</kbd> flip · <kbd>←</kbd> again · <kbd>→</kbd> got it · <kbd>S</kbd> speak
 
 Progress lives in `localStorage`, so it's per-device and doesn't sync between phone and laptop.
@@ -32,8 +33,11 @@ Progress lives in `localStorage`, so it's per-device and doesn't sync between ph
 Append to the array in `words.js`:
 
 ```js
-{ fr: "le poulailler", nl: "kippenhok", pos: "n.m.", cat: "Nature" },
+{ fr: "le poulailler", nl: "kippenhok", pos: "n.m.", cat: "Nature", added: "2026-09-30" },
 ```
+
+`added` is the date the word went in (YYYY-MM-DD). Words sharing the latest date form the
+"Newest batch" filter.
 
 Nouns include their article, verbs go in the infinitive. `pos` is free text (`n.m.`, `n.f.`,
 `n.m.pl`, `n.f.pl`, `v`, `adj`, `adv`, `expr`). A new `cat` value automatically appears in the
